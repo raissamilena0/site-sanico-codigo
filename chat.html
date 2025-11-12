@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Adiciona os ícones do Font Awesome -->
+    
+
+    <style>
+        .faixa {
+            background-color:#021f54;
+            display: flex;
+            justify-content: space-between;
+            margin: 0px;
+            height: 15vh;
+            width: 100%;
+            position: relative;
+        }
+
+        .sanicoteles {
+            color:aliceblue;
+            margin-left: 20px;
+            position:absolute;
+            top: 20%; 
+            left: 110px;
+            transform: translate(50%, -50%);
+            font-size: 50px;
+        }
+
+        .imagem {
+            display: flex;
+            align-items: center;
+            padding-left: 450px;
+        }
+
+        .texto {
+            margin-left: 10px;
+            align-self: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;    
+        }
+
+        /* Estilo para os ícones */
+        .redes {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .redes a {
+            color: #fff;
+            font-size: 45px;
+            transition: 0.3s;
+        }
+
+        .redes a:hover {
+            color: #E1306C; /* cor destaque ao passar o mouse */
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="faixa">
+        <h1 class="sanicoteles">Contatos</h1>
+    </div>
+
+    <!-- Aqui estão os ícones com links -->
+    <div class="redes">
+        <a href="https://www.instagram.com/seu_perfil_aqui" target="_blank" title="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+
+        <a href="https://www.facebook.com/seu_perfil_aqui" target="_blank" title="Facebook">
+            <i class="fa-brands fa-facebook"></i>
+        </a>
+
+        <a href="https://open.spotify.com/user/seu_perfil_aqui" target="_blank" title="Spotify">
+            <i class="fa-brands fa-spotify"></i>
+        </a>
+    </div>
+
+</body>
+</html>

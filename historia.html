@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>História</title>
 </head>
 <body>
     <style>
@@ -47,21 +47,19 @@
             position:absolute;
             top: 65%; 
             justify-content: flex-start;
-            align-items: center;
+            align-items: flex-end;
             left: 20px;
-            font-size: 24px;
             height: auto;
         }
         .texto1{
-            margin-left: 10px;
-            align-self: center;
-            font-family: Helvetica;
-            transform: rotate(90deg); 
-            transform-origin: left top; 
-            white-space: nowrap;
+           display: flex;
+           justify-items: center;
+           padding-left: 50px;
+           font-size: 16px;
+           
         }
         .img{
-            padding-right: 10px;
+            padding-right: 100px;
         }
 
     </style>
@@ -71,11 +69,16 @@
         </div>
         <div class="imagem1">
             <img class="img" src="data:image/jpeg;base64,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"
-            <h1 class="texto1">A Escola Estadual Sanico Teles, localizada em Santa Rita do Sapucaí, no estado de Minas Gerais, foi fundada em 24 de julho de 1964. Desde sua criação, a escola sempre teve um papel ativo na comunidade, não apenas como instituição de ensino, mas também como um importante centro de atividades comunitárias.
+           
+          <div  
+            <p class="texto1"> A Escola Estadual Sanico Teles, localizada em Santa Rita do Sapucaí, no estado de Minas Gerais, foi fundada em 24 de julho de 1964. Desde sua criação, a escola sempre teve um papel ativo na comunidade, não apenas como instituição de ensino, mas também como um importante centro de atividades comunitárias.
+
             Entre as iniciativas marcantes realizadas ao longo dos anos, destaca-se o "Festival do Guaraná", um evento tradicional que promovia a integração entre escola, alunos, famílias e a comunidade em geral, celebrando a cultura local por meio de apresentações, comidas típicas e atividades recreativas.
+
             Outra ação de grande relevância foi o projeto "Grupinho de Lata", criado com o objetivo de atender às crianças dos bairros próximos e da zona rural, oferecendo atividades educativas e recreativas for a do horário escolar. Esse grupo recebeu o nome carinhoso de "Sanico – Grupinho de Lata" e se tornou um símbolo do compromisso da escola com a inclusão e o bem-estar das crianças da região.
+
             Essas iniciativas mostram como a Escola Estadual Sanico Teles sempre buscou ir além da sala de aula, promovendo educação, cultura e cidadania para toda a comunidade.
-            </h1>
+            </p>
         </div>
         <div class="imagem2">
             <img class="img" src="Sanico-Grupinho-de-Lata-1.jpeg" width="400"height="240">
